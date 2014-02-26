@@ -5,7 +5,7 @@
 ** Login   <chauvi_n@epitech.net>
 ** 
 ** Started on  Mon Feb 24 19:49:42 2014 nicolas chauvin
-** Last update Mon Feb 24 20:00:10 2014 nicolas chauvin
+** Last update Wed Feb 26 18:32:57 2014 Nicolas Chauvin
 */
 
 #include <errno.h>
@@ -22,9 +22,9 @@ int	v_tcgetattr(int fd, struct termios *termios_p)
   return (0);
 }
 
-int	v_tcsetattr(int fd, int optional_actions, const struct termios *termios_p)
+int	v_tcsetattr(int fd, int optl_actions, const struct termios *termios_p)
 {
-  if ((tcsetattr(fd, optional_actions, termios_p)) == -1)
+  if ((tcsetattr(fd, optl_actions, termios_p)) == -1)
     {
       fprintf(stderr, "Error %d: tcsetattr() failure\n", errno);
       return (-1);
