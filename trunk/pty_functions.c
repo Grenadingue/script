@@ -5,7 +5,7 @@
 ** Login   <chauvi_n@epitech.net>
 ** 
 ** Started on  Sun Feb 23 16:17:46 2014 Nicolas Chauvin
-** Last update Mon Feb 24 20:21:52 2014 nicolas chauvin
+** Last update Fri Feb 28 18:15:34 2014 Nicolas Chauvin
 */
 
 #define _GNU_SOURCE
@@ -47,6 +47,21 @@ static int	my_unlockpt(int ptm)
   return (0);
 }
 
+int		my_ptsname_r(int ptm, char *pts_name, size_t size)
+{
+  unsigned int	pts_no;
+  int		end;
+  
+  if (ioctl(ptm, TIOCGPTN, &pts_no))
+    {
+      fprintf(stderr, "Error %d: ioctl() failure\n", errno);
+      return (-1);
+    }
+  end = snprintf(pts_name, size, "/dev/pts/%u", pts_no);
+  pts_name[end] = '\0';
+  return (0);
+}
+
 static int	my_openpty(int *ptm, int *pts)
 {
   char		pts_name[PATH_MAX];
@@ -54,7 +69,7 @@ static int	my_openpty(int *ptm, int *pts)
   memset(pts_name, 0, PATH_MAX);
   if (((*ptm) = v_open("/dev/ptmx", O_RDWR)) == -1)
     return (-1);
-  if ((ptsname_r((*ptm), pts_name, sizeof(pts_name))) == -1)
+  if ((my_ptsname_r((*ptm), pts_name, sizeof(pts_name))) == -1)
     return (-1);
   if ((my_grantpt(pts_name)) == -1)
     {
