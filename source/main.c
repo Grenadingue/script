@@ -1,25 +1,25 @@
 /*
-** main.c for my_script in /home/chauvi_n/TAF/tek2/System Unix/my_script/projet
-** 
+** main.c for script
+**
 ** Made by Nicolas Chauvin
-** Login   <chauvi_n@epitech.net>
-** 
+** Email <chauvin.nico@gmail.com>
+**
 ** Started on  Wed Feb 19 17:08:00 2014 Nicolas Chauvin
-** Last update Mon Feb 24 19:48:21 2014 nicolas chauvin
+** Last update Fri May  1 20:49:05 2015 Nicolas Chauvin
 */
 
 #include <stdlib.h>
 #include "usage.h"
-#include "my_script.h"
+#include "script.h"
 #include "termattr.h"
 
-static int	my_script(t_usage *usg, char **envp)
+static int	script(t_usage *usg, char **envp)
 {
   int		ptm;
   int		pts;
   int		pid;
   int		ret;
-  
+
   pid = -1;
   if ((pid = my_forkpty(&ptm, &pts)) == -1)
     return (-1);
@@ -44,7 +44,7 @@ int		main(int ac, char **av, char **envp)
   if (!(usg = usage(ac, av)))
     return (-1);
   if (!usg->quit)
-    ret = my_script(usg, envp);
+    ret = script(usg, envp);
   free(usg);
   return (ret);
 }

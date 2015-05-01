@@ -1,11 +1,11 @@
 /*
-** pty_functions.c for my_script in /home/chauvi_n/TAF/tek2/System Unix/my_script/projet
-** 
+** pty_functions.c for script
+**
 ** Made by Nicolas Chauvin
-** Login   <chauvi_n@epitech.net>
-** 
+** Email <chauvin.nico@gmail.com>
+**
 ** Started on  Sun Feb 23 16:17:46 2014 Nicolas Chauvin
-** Last update Fri Feb 28 18:15:34 2014 Nicolas Chauvin
+** Last update Fri May  1 20:45:04 2015 Nicolas Chauvin
 */
 
 #define _GNU_SOURCE

@@ -1,11 +1,11 @@
 /*
-** v_functions.h for my_script in /home/chauvi_n/TAF/tek2/System Unix/my_script/projet/trunk
-** 
+** v_functions.h for script
+**
 ** Made by nicolas chauvin
-** Login   <chauvi_n@epitech.net>
-** 
+** Email <chauvin.nico@gmail.com>
+**
 ** Started on  Mon Feb 24 18:45:57 2014 nicolas chauvin
-** Last update Mon Feb 24 20:02:06 2014 nicolas chauvin
+** Last update Fri May  1 20:46:15 2015 Nicolas Chauvin
 */
 
 #ifndef		V_FUNCTIONS_H_

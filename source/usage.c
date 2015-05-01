@@ -1,11 +1,11 @@
 /*
-** usage.c for my_script in /home/chauvi_n/TAF/tek2/System Unix/my_script/projet
-** 
+** usage.c for script
+**
 ** Made by Nicolas Chauvin
-** Login   <chauvi_n@epitech.net>
-** 
+** Email <chauvin.nico@gmail.com>
+**
 ** Started on  Wed Feb 19 17:17:59 2014 Nicolas Chauvin
-** Last update Mon Feb 24 20:45:03 2014 nicolas chauvin
+** Last update Fri May  1 20:47:32 2015 Nicolas Chauvin
 */
 
 #include <stdlib.h>
@@ -123,7 +123,7 @@ t_usage		*usage(int ac, char **av)
   tokenize_args_list(uparse);
   if ((ret = parse_usage(uparse, usg)) == -1)
     {
-      fprintf(stderr, "my_script: invalid option(s)\n%s", HELP_MSG);
+      fprintf(stderr, "script: invalid option(s)\n%s", HELP_MSG);
       free(usg);
       usg = NULL;
     }

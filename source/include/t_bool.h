@@ -1,11 +1,11 @@
 /*
-** t_bool.h for my_script in /home/chauvi_n/TAF/tek2/System Unix/my_script/projet
-** 
+** t_bool.h for script
+**
 ** Made by Nicolas Chauvin
-** Login   <chauvi_n@epitech.net>
-** 
+** Email <chauvin.nico@gmail.com>
+**
 ** Started on  Wed Feb 19 17:49:01 2014 Nicolas Chauvin
-** Last update Wed Feb 19 18:29:37 2014 Nicolas Chauvin
+** Last update Fri May  1 20:46:24 2015 Nicolas Chauvin
 */
 
 #ifndef		T_BOOL_H_

@@ -1,11 +1,11 @@
 /*
-** termattr.c for my_script in /home/chauvi_n/TAF/tek2/System Unix/my_script/projet
-** 
+** termattr.c for script
+**
 ** Made by Nicolas Chauvin
-** Login   <chauvi_n@epitech.net>
-** 
+** Email <chauvin.nico@gmail.com>
+**
 ** Started on  Sun Feb 23 16:30:06 2014 Nicolas Chauvin
-** Last update Mon Feb 24 19:58:10 2014 nicolas chauvin
+** Last update Fri May  1 20:45:34 2015 Nicolas Chauvin
 */
 
 #include "v_functions.h"

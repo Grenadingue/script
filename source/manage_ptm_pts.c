@@ -1,11 +1,11 @@
 /*
-** manage_ptm_pts.c for my_script in /home/chauvi_n/TAF/tek2/System Unix/my_script/projet
-** 
+** manage_ptm_pts.c for script
+**
 ** Made by Nicolas Chauvin
-** Login   <chauvi_n@epitech.net>
-** 
+** Email <chauvin.nico@gmail.com>
+**
 ** Started on  Sun Feb 23 16:31:02 2014 Nicolas Chauvin
-** Last update Mon Feb 24 20:30:20 2014 nicolas chauvin
+** Last update Fri May  1 20:47:16 2015 Nicolas Chauvin
 */
 
 #include <sys/select.h>
@@ -51,7 +51,7 @@ static int	is_link(char *filename, t_usage *usg)
 
   if ((lstat(filename, &buf)) != -1 && !usg->f_link && S_ISLNK(buf.st_mode))
     {
-      fprintf(stderr, "my_script: output file `%s` is a link.\n"
+      fprintf(stderr, "script: output file `%s` is a link.\n"
 	      "Use -f or --force if you really want to use it.\n"
 	      "Program not started.\n", filename);
       return (1);

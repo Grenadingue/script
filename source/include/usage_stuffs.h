@@ -1,11 +1,11 @@
 /*
-** usage_stuffs.h for my_script in /home/chauvi_n/TAF/tek2/System Unix/my_script/projet
-** 
+** usage_stuffs.h for script
+**
 ** Made by Nicolas Chauvin
-** Login   <chauvi_n@epitech.net>
-** 
+** Email <chauvin.nico@gmail.com>
+**
 ** Started on  Wed Feb 19 17:31:16 2014 Nicolas Chauvin
-** Last update Thu Feb 20 12:47:16 2014 Nicolas Chauvin
+** Last update Fri May  1 20:45:51 2015 Nicolas Chauvin
 */
 
 #ifndef		USAGE_STUFFS_H_
@@ -37,8 +37,8 @@ typedef struct		s_uparse
 # define TOKEN_HELP	5
 # define TOKEN_OTHER	6
 
-# define VERSION_MSG	"my_script from chauvi_n, version 1.0\n"
-# define HELP_MSG	"\nUsage:\n my_script [option] [file]\n\n"	\
+# define VERSION_MSG	"script from Nicolas Chauvin, version 1.0\n"
+# define HELP_MSG	"\nUsage:\n script [option] [file]\n\n"	\
   "Options:\n -a, --append\t\t\tappend the output\n"			\
   " -c, --command <command>\trun command rather than interactive shell\n" \
   " -f, --force\t\t\tuse output file even when it is a link\n"		\

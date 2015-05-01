@@ -1,11 +1,11 @@
 /*
-** usage.h for my_script in /home/chauvi_n/TAF/tek2/System Unix/my_script/projet
-** 
+** usage.h for script
+**
 ** Made by Nicolas Chauvin
-** Login   <chauvi_n@epitech.net>
-** 
+** Email <chauvin.nico@gmail.com>
+**
 ** Started on  Wed Feb 19 17:31:16 2014 Nicolas Chauvin
-** Last update Sun Feb 23 17:12:02 2014 Nicolas Chauvin
+** Last update Fri May  1 20:46:19 2015 Nicolas Chauvin
 */
 
 #ifndef		USAGE_H_

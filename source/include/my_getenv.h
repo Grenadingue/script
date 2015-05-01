@@ -1,11 +1,11 @@
 /*
-** my_getenv.h for my_script in /home/chauvi_n/TAF/tek2/System Unix/my_script/projet
-** 
+** my_getenv.h for script
+**
 ** Made by Nicolas Chauvin
-** Login   <chauvi_n@epitech.net>
-** 
+** Email <chauvin.nico@gmail.com>
+**
 ** Started on  Sun Feb 23 21:56:45 2014 Nicolas Chauvin
-** Last update Sun Feb 23 21:57:36 2014 Nicolas Chauvin
+** Last update Fri May  1 20:44:51 2015 Nicolas Chauvin
 */
 
 #ifndef		MY_GETENV_H_

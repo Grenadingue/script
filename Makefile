@@ -1,14 +1,14 @@
 ##
-## Makefile for my_script in /home/chauvi_n/TAF/tek2/System Unix/my_script/projet
-## 
+## Makefile for script
+##
 ## Made by Nicolas Chauvin
-## Login   <chauvi_n@epitech.net>
-## 
+## Email <chauvin.nico@gmail.com>
+##
 ## Started on  Wed Feb 19 17:01:52 2014 Nicolas Chauvin
-## Last update Fri May  1 20:34:16 2015 Nicolas Chauvin
+## Last update Fri May  1 20:49:24 2015 Nicolas Chauvin
 ##
 
-NAME		= my_script
+NAME		= script
 
 CC		= gcc
 
