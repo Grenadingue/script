@@ -5,7 +5,7 @@
 ## Login   <chauvi_n@epitech.net>
 ## 
 ## Started on  Wed Feb 19 17:01:52 2014 Nicolas Chauvin
-## Last update Mon Feb 24 19:50:19 2014 nicolas chauvin
+## Last update Fri May  1 20:34:16 2015 Nicolas Chauvin
 ##
 
 NAME		= my_script
@@ -14,21 +14,21 @@ CC		= gcc
 
 RM		= rm -f
 
-TRUNK		= trunk/
+SOURCE		= source/
 
-SRCS		= $(TRUNK)main.c		\
-		  $(TRUNK)v_functions1.c	\
-		  $(TRUNK)v_functions2.c	\
-		  $(TRUNK)my_getenv.c		\
-		  $(TRUNK)usage.c		\
-		  $(TRUNK)pty_functions.c	\
-		  $(TRUNK)manage_ptm_pts.c	\
-		  $(TRUNK)write_script_infos.c	\
-		  $(TRUNK)termattr.c
+SRCS		= $(SOURCE)main.c		\
+		  $(SOURCE)v_functions1.c	\
+		  $(SOURCE)v_functions2.c	\
+		  $(SOURCE)my_getenv.c		\
+		  $(SOURCE)usage.c		\
+		  $(SOURCE)pty_functions.c	\
+		  $(SOURCE)manage_ptm_pts.c	\
+		  $(SOURCE)write_script_infos.c	\
+		  $(SOURCE)termattr.c
 
 OBJS		= $(SRCS:.c=.o)
 
-HEADERS		= -I $(TRUNK)include/
+HEADERS		= -I $(SOURCE)include/
 
 CFLAGS		= -W -Wall -Wextra -Werror $(HEADERS)
 
