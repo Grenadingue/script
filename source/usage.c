@@ -5,7 +5,7 @@
 ** Email <chauvin.nico@gmail.com>
 **
 ** Started on  Wed Feb 19 17:17:59 2014 Nicolas Chauvin
-** Last update Fri May  1 20:47:32 2015 Nicolas Chauvin
+** Last update Fri May  1 22:22:41 2015 Nicolas Chauvin
 */
 
 #include <stdlib.h>
@@ -70,16 +70,16 @@ static int	parse_usage(t_uparse *uparse, t_usage *usg)
   while (uparse)
     {
       if (uparse->token == TOKEN_VERSION || uparse->token == TOKEN_HELP)
-	usg->quit = TRUE;
+	usg->quit = true;
       if (uparse->token == TOKEN_APPEND && !usg->append)
-	usg->append = TRUE;
+	usg->append = true;
       else if (uparse->token == TOKEN_COMMAND && !usg->command && uparse->next)
 	{
 	  usg->command = uparse->next->str;
 	  uparse = uparse->next;
 	}
       else if (uparse->token == TOKEN_FORCE && !usg->f_link)
-	usg->f_link = TRUE;
+	usg->f_link = true;
       else if (uparse->token == TOKEN_VERSION)
 	return (1);
       else if (uparse->token == TOKEN_HELP)
