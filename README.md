@@ -7,7 +7,7 @@ This README documents the why, the what, and the how of this repository
 
 ### What is this repository for? ###
 
-* An illustration of my C skills, attached to my [personal portfolio](http://nicolas.chauv.in/portfolio.phtml) *(online soon)*
+* An illustration of my C skills
 * Was a school project
 
 ### What is "script"? ###
@@ -21,7 +21,7 @@ From [Wikipedia](http://en.wikipedia.org/wiki/Script_%28Unix%29):
 
 ```
 $ cd
-$ git clone https://github.com/NicolasChauvin/script.git
+$ git clone https://github.com/grenadingue/script.git
 $ cd script
 $ make
 $ ./script --help
